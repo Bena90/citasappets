@@ -33,7 +33,8 @@ const Form = () => {
     const onSubmit = () => {
         let datos = formik.values
         datos.id = generateId()
-        setPatients(prev => [...prev, datos])
+        console.log(datos)
+        setPatients(prev => ([...prev, datos]))
         formik.resetForm()
     }
     

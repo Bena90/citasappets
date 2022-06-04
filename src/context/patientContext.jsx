@@ -13,7 +13,7 @@ const PatientProvider = ({children}) => {
                 console.log('Error deserializing')
               }
         }else{
-            return {}
+            return ([])
         }
     }
     )
