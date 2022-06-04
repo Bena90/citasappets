@@ -3,6 +3,7 @@ import {createContext, useState} from 'react';
 export const PatientContext = createContext({});
 
 const PatientProvider = ({children}) => {
+    const [ patient, setPatient ] = useState ({})
     const [ patients, setPatients ] = useState (()=> {
         const valuesInLocalStorage = window.localStorage.getItem('patients');
         if (valuesInLocalStorage) {
@@ -16,7 +17,6 @@ const PatientProvider = ({children}) => {
         }
     }
     )
-    const [ patient, setPatient ] = useState ({})
 
     const deletePatient = (id) => {
         const newList = patients.filter(item => item.id !== id)
