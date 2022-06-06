@@ -2,8 +2,7 @@
 import Header from "./components/Header/Header";
 import Form from "./components/Form/Form";
 import Patients from "./components/Patients/Patients";
-import PatientProvider from "./context/PatientContext";
-
+import PatientProvider from "./context/patientContext.jsx";
 
 function App() {
 

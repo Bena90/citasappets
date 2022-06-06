@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { PatientContext } from '../../context/PatientContext';
-//import usePatients from '../../hook/usePatients';
+import { PatientContext } from '../../context/patientContext';
+
 import Card from '../Card/Card';
 
 
